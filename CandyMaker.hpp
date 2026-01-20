@@ -6,5 +6,5 @@ class CandyMaker : public SugarSupplier, public ChocolateSupplier {
 public:
 
     CandyMaker(const char* sugarSupplierName, const char* chocolateSupplierName);
-    void makeCandy();
+    void makeCandy(const char* candyName);
 };
