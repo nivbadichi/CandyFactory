@@ -2,8 +2,6 @@
     this project was created by Niv Badichi
   ========================================*/
 #pragma once
-#ifndef CHOCOSUPPLIER_HPP
-#define CHOCOSUPPLIER_HPP
 #include <string>
 #include <iostream>
 
@@ -26,4 +24,3 @@ public:
     void supplyChocolate();
 };
 
-#endif // CHOCOSUPPLIER_HPP

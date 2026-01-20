@@ -2,8 +2,6 @@
     this project was created by Niv Badichi
   ========================================*/
 #pragma once
-#ifndef SUGARSUPPLIER_HPP
-#define SUGARSUPPLIER_HPP
 #include <string>
 #include <iostream>
 
@@ -27,4 +25,3 @@ public:
     void supplySugar();
 };
 
-#endif // SUGARSUPPLIER_HPP
