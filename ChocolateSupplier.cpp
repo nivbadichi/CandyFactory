@@ -65,15 +65,8 @@ void ChocolateSupplier::setChocolateName(const char* newName) {
 
 void ChocolateSupplier::supplyChocolate() {
     if (chocolateName != nullptr) {
-        std::cout   << "╔══════════════════════════════════════╗\n"
-                    << "║  🍫🌙 CHOCO DELIVERY BY MOONLIGHT 🌙🍫  ║\n"
-                    << "╠══════════════════════════════════════╣\n"
-                    << "║  Supplier: [" << chocolateName << "]\n"
-                    << "║  Action  : *unfolds velvet cocoa cloak*\n"
-                    << "║  Result  : CHOCOLATE FLOWS LIKE A RIVER 🍫🌊\n"
-                    << "╚══════════════════════════════════════╝\n";
+        std::cout << "Supplying " << chocolateName << "'s chocolate." << std::endl;
     } else {
-        std::cout << "⚠️🍫 The chocolate truck arrived... but forgot its NAME TAG.\n"
-            << "   A mysterious stranger drops chocolate dramatically and vanishes 🕵️‍♂️✨\n";
+        std::cout << "no chocolate supplier name set." << std::endl;
     }
 }

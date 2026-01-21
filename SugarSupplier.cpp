@@ -65,16 +65,9 @@ void SugarSupplier::setSugarName(const char* newName) {
 }
 
 void SugarSupplier::supplySugar() {
-    if (sugarName != nullptr) { 
-        std::cout   << "╔══════════════════════════════════════╗\n"
-                    << "║  🍬✨ SUGAR SUMMONING CEREMONY ✨🍬║\n"
-                    << "╠══════════════════════════════════════╣\n"
-                    << "║  Supplier: [" << sugarName << "]\n"
-                    << "║  Action  : *opens portal of sprinkles*\n"
-                    << "║  Result  : SUGAR is now raining!!! ☁️🍭\n"
-                    << "╚══════════════════════════════════════╝\n";  
-                } else {
-                std::cout << "⚠️🍬 The sugar truck arrived... but forgot its NAME TAG.\n"
-            << "   A mysterious stranger drops sugar dramatically and vanishes 🕵️‍♂️✨\n";
+    if (sugarName != nullptr) {
+        std::cout << "Supplying " << sugarName << "'s sugar." << std::endl;
+    } else {
+        std::cout << "no sugar supplier name set." << std::endl;
     }
 }
