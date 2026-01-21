@@ -10,10 +10,20 @@ CandyMaker::CandyMaker(const char* sugarSupplierName, const char* chocolateSuppl
 
 void CandyMaker::makeCandy(const char* candyName) {
     if (candyName == nullptr) {
-        std::cout << "Cannot make candy without a name." << std::endl;
+        std::cout
+        << "🧙‍♂️🍭 The CandyMaker whispers: \"Name your candy, mortal...\"\n"
+        << "   (No name given. The cauldron refuses to bubble.) 🫧\n";
         return;
-    } 
-    std::cout << "using Sugar from: " << getSugarName() << std::endl;
-    std::cout << "using Chocolate from: " << getChocolateName() << std::endl;
-    std::cout << "Making candy: " << candyName << "!" << std::endl;
+    } else { std::cout
+        << "🎩✨ WELCOME TO THE GLITTERY FACTORY OF DOOM (but cute) ✨🎩\n"
+        << "   Ingredients acquired:\n"
+        << "     🍬 Sugar from   [" << getSugarName() << "]\n"
+        << "     🍫 Chocolate from [" << getChocolateName() << "]\n"
+        << "   Process:\n"
+        << "     1) *dramatic stirring noises* 🥄🥄🥄\n"
+        << "     2) *sprinkle confetti into the laws of physics* 🎉\n"
+        << "     3) *invoke sweetness protocol v17* ✅\n"
+        << "   RESULT:\n"
+        << "     🏆 [" << candyName << "] HAS BEEN FORGED! 🍭🔥✨\n";
+    }
 }

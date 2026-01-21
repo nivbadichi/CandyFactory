@@ -66,16 +66,24 @@ bool CandyBox<T>::removeItem(int index) {
 template <typename T>
 void CandyBox<T>::displayItems() const {
     if (items == nullptr) {
-        std::cout << "CandyBox doesnt exist!" << std::endl;
+        std::cout << "📦💀 This CandyBox is a *concept*, not a container. (Not initialized)\n";
         return;
     }
+    std::cout
+        << "╔══════════════════════════════════════╗\n"
+        << "║  📦🍬 THE BOX OPENS... DRAMATICALLY 🍬📦  ║\n"
+        << "╠══════════════════════════════════════╣\n"
+        << "║  Capacity: " << capacity << " | Count: " << count << "\n"
+        << "╠══════════════════════════════════════╣\n";
     if (count == 0) {
-        std::cout << "CandyBox is empty!" << std::endl;
+        std::cout
+            << "║  (empty) 🥲  The candies have escaped into the night...\n"
         return;
     }
     for (int i = 0; i < count; ++i) {
-        std::cout << items[i] << std::endl;
+        std::cout << "║  [" << i << "] -> " << items[i] << "\n";
     }
+    std::cout << "╚══════════════════════════════════════╝\n";
 }
 
 template <typename T>

@@ -10,7 +10,8 @@
 #include <cstring>
 
 int main() {
-    
+std::cout << "🎬✨ Roll camera! The Candy Factory is now LIVE ✨🎬\n\n";
+
 CandyMaker maker("SugarCo", "ChocoDelight"); // Create a CandyMaker with suppliers
     // supply ingredients and make candy
     maker.supplySugar();
@@ -38,5 +39,6 @@ CandyMaker maker("SugarCo", "ChocoDelight"); // Create a CandyMaker with supplie
     
     // Display items again after removal of MintChoco
     box.displayItems();
+    std::cout << "\n🏁🍬 End of shift. The candies salute you and disappear in sparkles. ✨\n";
     return 0;
 }
