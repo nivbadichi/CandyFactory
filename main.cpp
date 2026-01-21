@@ -1,9 +1,13 @@
+
+/*=========================================
+    this project was created by Niv Badichi
+  ========================================*/
+#include "CandyMaker.hpp"
+#include "CandyBox.hpp"
+#include "SugarSupplier.hpp"
+#include "ChocolateSupplier.hpp"
 #include <iostream>
-// Include the headers for your classes:
-// #include "SugarSupplier.h"
-// #include "ChocolateSupplier.h"
-// #include "CandyMaker.h"
-// #include "CandyBox.h"
+#include <cstring>
 
 int main() {
     // 1. Create a CandyMaker with sugar and chocolate supplier names

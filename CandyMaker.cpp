@@ -1,3 +1,7 @@
+/*=========================================
+    this project was created by Niv Badichi
+  ========================================*/
+  
 #include "CandyMaker.hpp"
 #include <iostream>
 
